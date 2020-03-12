@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './style/generalCard.css';
 
 export default function GameOver(props) {
 
@@ -8,9 +8,12 @@ export default function GameOver(props) {
   }
 
   return (
-    <div className="game-over-container">
-      You got {props.state.state.score} of {props.state.state.questions.length} right!
-      <button onClick={refreshPage}>Try again</button>
+    <div className="container">
+      <h1>🎶 Music Quiz 🎶</h1>
+      <p className="score">
+        You got {props.state.state.score} of {props.state.state.questions.length} right!
+      </p>
+      <p className="button" onClick={refreshPage}>Try again</p>
     </div>
     )
 };

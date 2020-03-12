@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/Confirmation.css';
+import './style/generalCard.css';
 
 export default function Confirmation(props) {
   const updateState = (bool) => {
@@ -14,17 +14,17 @@ export default function Confirmation(props) {
   
   return (
     props.state.state.answer === props.state.state.questions[props.state.state.currentQuestion - 1].correct_answer ?
-    <div className="confirmation-container">
-      <h1>Music Quiz</h1>
-      <p className="confirmaton-answer">You got this right!</p>
-      <p className="confirmation-button" onClick={() => updateState(true)}>
+    <div className="container">
+      <h1>🎶 Music Quiz 🎶</h1>
+      <p className="score">You got this right! 🥳</p>
+      <p className="button" onClick={() => updateState(true)}>
         Next question
       </p>
     </div> :
-    <div className="confirmation-container">
-      <h1>Music Quiz</h1>
-      <p className="confirmaton-answer">You got this wrong</p>
-      <p className="confirmation-button" onClick={() => updateState(false)}>
+    <div className="container">
+      <h1>🎶 Music Quiz 🎶</h1>
+      <p className="score">Ooops, this was wrong...</p>
+      <p className="button" onClick={() => updateState(false)}>
         Next question
       </p>
     </div>

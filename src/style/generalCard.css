@@ -1,4 +1,6 @@
-.confirmation-container {
+/* This is for GameOver.js and Confirmation.js */
+
+.container {
   max-width: 350px;
   margin: 30px auto;
   display: flex;
@@ -10,18 +12,18 @@
   border: 0.15em solid black;
 }
 
-.confirmaton-answer {
+.score {
   background-color: #ddd;
   padding: 2em 5em;
   margin: 0;
 }
 
-.confirmation-button {
+.button {
   padding: 20px;
   margin: 0;
 }
 
-.confirmation-button:hover {
+.button:hover {
   color: lightpink;
   background-color: white;
 }
