@@ -1,6 +1,6 @@
 ## A simple music quiz app
 
-This quiz was made by me as a project when doing the full stack javaScript bootcamp for </salt> 2020.
+This quiz was made by me as a project when doing the full stack javaScript bootcamp for School of Applied Technology 2020.
 
 ### Technices used
 
