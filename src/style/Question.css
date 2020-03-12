@@ -1,0 +1,35 @@
+.current-question {
+  max-width: 350px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: lightpink;
+  box-shadow: 0.25em 0.25em 0.5em #333333;
+  border: 0.15em solid black;
+}
+
+.current-question-header {
+
+}
+
+.current-question-question {
+  padding: 0.9em 5em;
+  margin-bottom: 10px;
+}
+
+.current-question-score {
+  margin-bottom: 0;
+}
+
+.current-question-buttons {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-around;
+}
+
+.current-question-question {
+  background-color: #ddd;
+  padding: 0.7em 2em;
+}

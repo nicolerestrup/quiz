@@ -1,6 +1,7 @@
 import React from 'react';
 import Confirmation from './Confirmation';
 import GameOver from './GameOver';
+import './style/Question.css';
 
 export default function Question(props) {
   const template = (question) => {
@@ -21,19 +22,22 @@ export default function Question(props) {
 
     return (
       <div className="current-question" key={question.currentQuestion}>
-        Current Question: {question.currentQuestion}
-        Current Score: {question.score}
-        <div className="question">
+        <div className="current-question-header">
+        <p className="current-question-score">Score: {question.score}</p>
+        <p className="current-question-number-question">Question: {question.currentQuestion}</p>
+        </div>
+        <div className="current-question-question">
          {question.questions[question.currentQuestion - 1].question}
         </div>
-        <div className="question-buttons"></div>
+        <div className="current-question-buttons">
         <button onClick={() => answerSelectedTrue(props.status)}>True</button>
         <button onClick={() => answerSelectedFalse(props.status)}>False</button>
+        </div>
       </div>
     )
   }
   return (
-    props.status.state.currentQuestion === props.status.state.questions.length ?
+    props.status.state.currentQuestion === props.status.state.questions.length + 1 ?
     <GameOver state={props.status}/> :
     props.status.state.nextQuestion ? 
     <Confirmation state={props.status}/>

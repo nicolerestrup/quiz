@@ -1,5 +1,6 @@
-import React from 'react'
-import Question from './Question'
+import React from 'react';
+import Question from './Question';
+import './style/Start.css';
 
 export default function start(props) {
 
@@ -12,16 +13,13 @@ export default function start(props) {
   }
 
   return (
-    <div className="ready-container">
-      {props.state.gameStage === 'quizStarted' ?
-      <Question status={props}/> :
-      props.state.ready ?
-      <button className="ready-button" onClick={() => startGame(props)}>Start</button> :
-      <div className="loading">
-      <button className="ready-button-disabled">Start</button>
-      <p>Loading...</p>
-      </div>
-      }
+    props.state.gameStage === 'quizStarted' ?
+    <Question status={props}/> :
+    props.state.ready ?
+    <button className="ready-button" onClick={() => startGame(props)}>Start</button> :
+    <div className="loading">
+    <button className="ready-button-disabled">Start</button>
+    <p>Loading...</p>
     </div>
   )
 }

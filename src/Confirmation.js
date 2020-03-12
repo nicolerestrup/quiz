@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Confirmation(props) {
   const updateState = (bool) => {
+    console.log(props)
     props.state.setState({
       ...props.state.state,
       nextQuestion: false,
