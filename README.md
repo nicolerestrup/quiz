@@ -2,7 +2,7 @@
 
 This quiz was made by me as a project when doing the full stack javaScript bootcamp for School of Applied Technology 2020.
 
-### Technices used
+### Technologies used
 
 For my backend I've used: <br />
 1. Axios
