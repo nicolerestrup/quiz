@@ -1,0 +1,16 @@
+.App {
+  max-width: 350px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: lightpink;
+  box-shadow: 0.25em 0.25em 0.5em #333333;
+  border: 0.15em solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.67em;
+}

@@ -16,10 +16,16 @@ export default function start(props) {
     props.state.gameStage === 'quizStarted' ?
     <Question status={props}/> :
     props.state.ready ?
-    <button className="ready-button" onClick={() => startGame(props)}>Start</button> :
+    <div className="start">
+      <div className="start-greeting">
+        <p className="start-greeting-header">💃 Welcome to the party! 🎉</p>
+        <p className="start-greeting-text">-Diplo</p>
+      </div>
+      <p className="start-button" onClick={() => startGame(props)}>Start quiz</p>
+    </div> :
     <div className="loading">
-    <button className="ready-button-disabled">Start</button>
-    <p>Loading...</p>
+      <p className="loading-text">⚙️ Loading... ⚙️</p>
+    <p className="loading-button">Start quiz</p>
     </div>
   )
 }

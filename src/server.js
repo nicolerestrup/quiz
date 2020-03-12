@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const axios = require('axios').default;
+const Entities = require('html-entities').XmlEntities;
 const apiUrl = 'https://opentdb.com/api.php?amount=5&category=12&difficulty=easy&type=boolean';
 
 
@@ -15,7 +16,7 @@ app.get('/questions', async function (req, res) {
       id: index,
       correct_answer: question.correct_answer,
       incorrect_answer: question.incorrect_answers,
-      question: question.question
+      question: Entities.decode(question.question)
     }
   });
  return res.send(questions);

@@ -15,14 +15,12 @@ export default function Confirmation(props) {
   return (
     props.state.state.answer === props.state.state.questions[props.state.state.currentQuestion - 1].correct_answer ?
     <div className="container">
-      <h1>🎶 Music Quiz 🎶</h1>
-      <p className="score">You got this right! 🥳</p>
+      <p className="score">You got it right! 🥳</p>
       <p className="button" onClick={() => updateState(true)}>
         Next question
       </p>
     </div> :
     <div className="container">
-      <h1>🎶 Music Quiz 🎶</h1>
       <p className="score">Ooops, this was wrong...</p>
       <p className="button" onClick={() => updateState(false)}>
         Next question

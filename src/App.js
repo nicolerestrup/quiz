@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './style/index.css';
+import './style/App.css';
 import Start from './Start';
 import axios from 'axios';
 
@@ -22,6 +22,7 @@ function App() {
 
   return (
     <div className="App">
+        <h1>🎶 Music Quiz 🎶</h1>
         <Start state={state} setState={setState}/>
     </div>
   );

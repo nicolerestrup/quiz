@@ -1,17 +1,5 @@
 /* This is for GameOver.js and Confirmation.js */
 
-.container {
-  max-width: 350px;
-  margin: 30px auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  background-color: lightpink;
-  box-shadow: 0.25em 0.25em 0.5em #333333;
-  border: 0.15em solid black;
-}
-
 .score {
   background-color: #ddd;
   padding: 2em 5em;

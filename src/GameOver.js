@@ -9,7 +9,6 @@ export default function GameOver(props) {
 
   return (
     <div className="container">
-      <h1>🎶 Music Quiz 🎶</h1>
       <p className="score">
         You got {props.state.state.score} of {props.state.state.questions.length} right!
       </p>
