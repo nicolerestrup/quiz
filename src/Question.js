@@ -22,6 +22,7 @@ export default function Question(props) {
 
     return (
       <div className="current-question" key={question.currentQuestion}>
+        <h1>Music Quiz</h1>
         <div className="current-question-header">
         <p className="current-question-score">Score: {question.score}</p>
         <p className="current-question-number-question">Question: {question.currentQuestion}</p>
@@ -30,8 +31,8 @@ export default function Question(props) {
          {question.questions[question.currentQuestion - 1].question}
         </div>
         <div className="current-question-buttons">
-        <button onClick={() => answerSelectedTrue(props.status)}>True</button>
-        <button onClick={() => answerSelectedFalse(props.status)}>False</button>
+        <p className="current-question-button" onClick={() => answerSelectedTrue(props.status)}>True</p>
+        <p className="current-question-button" onClick={() => answerSelectedFalse(props.status)}>False</p>
         </div>
       </div>
     )

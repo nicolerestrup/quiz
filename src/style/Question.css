@@ -11,12 +11,13 @@
 }
 
 .current-question-header {
+  background-color: white;
 
 }
 
 .current-question-question {
-  padding: 0.9em 5em;
-  margin-bottom: 10px;
+  background-color: #ddd;
+  padding: 0.7em 2em;
 }
 
 .current-question-score {
@@ -25,11 +26,17 @@
 
 .current-question-buttons {
   display: flex;
-  margin-bottom: 10px;
-  justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
-.current-question-question {
-  background-color: #ddd;
-  padding: 0.7em 2em;
+.current-question-button {
+  width: 50%;
+  padding: 20px;
+  margin: 0;
+}
+
+.current-question-button:hover {
+  color: lightpink;
+  background-color: white;
 }
