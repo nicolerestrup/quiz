@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
+import './style/index.css';
 import Start from './Start';
 import axios from 'axios';
 
@@ -9,7 +9,7 @@ function App() {
     gameStage: 'start',
     score: 0
   })
-  
+
   useEffect( () =>{
      axios.get('http://localhost:3000/questions')
       .then(result => 
@@ -22,10 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      {state.ready ?
-        <Start state={state} setState={setState}/> :
-        'Loading...'
-      }
+        <Start state={state} setState={setState}/>
     </div>
   );
 }
