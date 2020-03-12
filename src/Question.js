@@ -1,5 +1,6 @@
 import React from 'react';
 import Confirmation from './Confirmation';
+import GameOver from './GameOver';
 
 export default function Question(props) {
   const template = (question) => {
@@ -21,6 +22,7 @@ export default function Question(props) {
     return (
       <div className="current-question" key={question.currentQuestion}>
         Current Question: {question.currentQuestion}
+        Current Score: {question.score}
         <div className="question">
          {question.questions[question.currentQuestion - 1].question}
         </div>
@@ -31,6 +33,8 @@ export default function Question(props) {
     )
   }
   return (
+    props.status.state.currentQuestion === 5 ?
+    <GameOver state={props.status}/> :
     props.status.state.nextQuestion ? 
     <Confirmation state={props.status}/>
     : 

@@ -20,8 +20,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      Ready: {state.ready.toString()}
-      <Start state={state} setState={setState}/>
+      {state.ready ?
+        <Start state={state} setState={setState}/> :
+        'Loading...'
+      }
     </div>
   );
 }
