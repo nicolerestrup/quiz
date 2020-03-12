@@ -21,7 +21,7 @@ export default function Question(props) {
     }
 
     return (
-      <div className="current-question" key={question.currentQuestion}>
+      <div className="current-question-container" key={question.currentQuestion}>
         <h1>Music Quiz</h1>
         <div className="current-question-header">
         <p className="current-question-score">Score: {question.score}</p>

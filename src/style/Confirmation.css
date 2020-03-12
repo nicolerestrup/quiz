@@ -1,4 +1,4 @@
-.current-question-container {
+.confirmation-container {
   max-width: 350px;
   margin: 30px auto;
   display: flex;
@@ -10,32 +10,18 @@
   border: 0.15em solid black;
 }
 
-.current-question-header {
-  background-color: white;
-}
-
-.current-question-question {
+.confirmaton-answer {
   background-color: #ddd;
-  padding: 0.7em 2em;
-}
-
-.current-question-score {
-  margin-bottom: 0;
-}
-
-.current-question-buttons {
-  display: flex;
-  padding: 0;
+  padding: 2em 5em;
   margin: 0;
 }
 
-.current-question-button {
-  width: 50%;
+.confirmation-button {
   padding: 20px;
   margin: 0;
 }
 
-.current-question-button:hover {
+.confirmation-button:hover {
   color: lightpink;
   background-color: white;
 }
