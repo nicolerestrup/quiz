@@ -2,13 +2,19 @@ import React from 'react';
 import Confirmation from './Confirmation';
 
 export default function Question(props) {
-
   const template = (question) => {
-    console.log(question)
-    const answerSelected = (state) => {
+    const answerSelectedTrue = (state) => {
       state.setState({
         ...state.state,
           nextQuestion: true,
+          answer: 'True'
+      })
+    }
+    const answerSelectedFalse = (state) => {
+      state.setState({
+        ...state.state,
+          nextQuestion: true,
+          answer: 'False'
       })
     }
 
@@ -19,14 +25,14 @@ export default function Question(props) {
          {question.questions[question.currentQuestion - 1].question}
         </div>
         <div className="question-buttons"></div>
-        <button onClick={() => answerSelected(props.status)}>True</button>
-        <button onClick={() => answerSelected(props.status)}>False</button>
+        <button onClick={() => answerSelectedTrue(props.status)}>True</button>
+        <button onClick={() => answerSelectedFalse(props.status)}>False</button>
       </div>
     )
   }
   return (
     props.status.state.nextQuestion ? 
-    <Confirmation state={props}/>
+    <Confirmation state={props.status}/>
     : 
     template(props.status.state)
     )
