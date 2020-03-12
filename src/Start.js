@@ -3,18 +3,20 @@ import Question from './Question'
 
 export default function start(props) {
 
+  const startGame = (props) => {
+    props.setState({
+      ...props.state,
+      gameStage: 'quizStarted',
+      currentQuestion: 1
+    })
+  }
+
   return (
     <div className="ready-container">
-      {props.state.ready ? 
-      <button className="ready-clickable-button" onClick={() => props.setState({
-        ...props.state,
-        gameStage: 'quizStarted',
-        currentQuestion: 1
-      })}>Start</button> :
-        <button className="ready-unclickable-button">Start</button>
-      }
       {props.state.gameStage === 'quizStarted' ?
-      <Question status={props}/> : null}
+      <Question status={props}/> : 
+      <button className="ready-clickable-button" onClick={() => startGame(props)}>Start</button>
+      }
     </div>
   )
 }

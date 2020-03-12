@@ -33,7 +33,7 @@ export default function Question(props) {
     )
   }
   return (
-    props.status.state.currentQuestion === 5 ?
+    props.status.state.currentQuestion === props.status.state.questions.length ?
     <GameOver state={props.status}/> :
     props.status.state.nextQuestion ? 
     <Confirmation state={props.status}/>
