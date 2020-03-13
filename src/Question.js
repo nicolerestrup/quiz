@@ -30,8 +30,8 @@ export default function Question(props) {
          {question.questions[question.currentQuestion - 1].question}
         </div>
         <div className="current-question-buttons">
-        <p className="current-question-button" onClick={() => answerSelectedTrue(props.status)}>True</p>
-        <p className="current-question-button" onClick={() => answerSelectedFalse(props.status)}>False</p>
+        <p className="current-question-buttons-true" onClick={() => answerSelectedTrue(props.status)}>True</p>
+        <p className="current-question-buttons-false" onClick={() => answerSelectedFalse(props.status)}>False</p>
         </div>
       </div>
     )

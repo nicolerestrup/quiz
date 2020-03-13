@@ -8,9 +8,11 @@
   background-color: lightpink;
   box-shadow: 0.25em 0.25em 0.5em #333333;
   border: 0.15em solid black;
+  border-radius: 20px;
 }
 
 h1 {
   margin: 0;
   padding: 0.67em;
+  font-family: 'Cinzel', serif;
 }

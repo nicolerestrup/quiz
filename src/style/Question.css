@@ -23,13 +23,26 @@
   margin: 0;
 }
 
-.current-question-button {
+.current-question-buttons-true {
   width: 50%;
   padding: 20px;
   margin: 0;
 }
 
-.current-question-button:hover {
+.current-question-buttons-false {
+  width: 50%;
+  padding: 20px;
+  margin: 0;
+}
+
+.current-question-buttons-true:hover {
+  border-radius: 0 0 0 20px;
+  color: lightpink;
+  background-color: white;
+}
+
+.current-question-buttons-false:hover {
+  border-radius: 0 0 20px 0;
   color: lightpink;
   background-color: white;
 }

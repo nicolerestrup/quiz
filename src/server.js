@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const axios = require('axios').default;
 const Entities = require('html-entities').XmlEntities;
-const apiUrl = 'https://opentdb.com/api.php?amount=5&category=12&difficulty=easy&type=boolean';
+const apiUrl = 'https://opentdb.com/api.php?amount=3&category=12&difficulty=easy&type=boolean';
 
 
 app.use(express.static(path.join(__dirname, 'build')));
