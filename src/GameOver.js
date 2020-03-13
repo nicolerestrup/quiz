@@ -11,7 +11,7 @@ export default function GameOver(props) {
     props.state.state.score / props.state.state.questions.length >= 0.5 ?
     <div className="container">
       <p className="score">
-        You got {props.state.state.score} out of {props.state.state.questions.length} right! 🤯
+        You got {props.state.state.score} out of {props.state.state.questions.length} right! 🎉
       </p>
       <p className="button" onClick={refreshPage}>Try again</p>
     </div> :
